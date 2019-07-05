@@ -1,0 +1,37 @@
+body{
+	font-family: 'Arvo', serif;
+	color: #1C1C1C;
+}
+
+.content{
+	text-align: center;
+	border:4px solid #1C1C1C;
+	border-radius: 15px;
+	width: 60%;
+	margin-right:auto; 
+	margin-left:auto;
+	margin-top: 30px;
+}
+
+.bar{
+	width: 30%;
+	margin-top: 20px;
+	margin-right:auto; 
+	margin-left:auto;
+}
+
+.title{
+	margin-top: 15px;
+	letter-spacing:3px;
+}
+
+.description{
+	margin-top: 20px;
+	text-align: center;
+	padding-right: 20px; 
+	padding-left: 20px;
+}
+
+#showData{
+	color: #555;
+}
