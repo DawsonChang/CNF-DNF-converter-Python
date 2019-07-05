@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNF/DNF Generator</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2 class="title">CNF/DNF  Generator</h2>
+            <div class="description"> 
+                <p>
+                    This tool generates <a href="https://en.wikipedia.org/wiki/Conjunctive_normal_form">Conjunctive normal form(CNF)</a>, <a href="https://en.wikipedia.org/wiki/Disjunctive_normal_form">Disjunctive normal form(DNF)</a> for propositional logic formulas. You have to follow the formats below or it will generate unexpected results.
+                </p>
+                <p>
+                    For example, the propositional formula:
+                    <br><nobr><tt>(p &and; q) &rarr; &not;r</tt></nobr>  should be written as <nobr><tt>(p and q) -&gt; ~r</tt></nobr> 
+                    <br><nobr><tt>(p &hArr; q) &or; &not;r</tt></nobr>  should be written as <nobr><tt>(p &lt;-&gt; q) or ~r</tt></nobr>
+                    <br>Parenthesis must be added properly: 
+                    <br><nobr><tt>p -&gt; q -&gt; r</tt></nobr>  should be written as <nobr><tt>p -&gt; (q -&gt; r)</tt></nobr>
+                </p>
+            </div>
+            <div class="form-group bar">
+                <input autocomplete="off" autofocus class="form-control" placeholder="input new formula" type="text">
+            </div>
+            <div id="showData"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/static/scripts.js"></script>
+</body>
+</html>
