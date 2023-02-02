@@ -4,5 +4,5 @@ gunicorn==19.9.0
 itsdangerous==1.1.0
 jinja2==2.10.1
 markupsafe==1.1.1
-werkzeug==0.15.4
+werkzeug==0.15.5
 Flask-Session==0.3.1
